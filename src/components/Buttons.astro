@@ -1,0 +1,12 @@
+---
+interface Props{
+value?: string
+}
+const {value} = Astro.props
+---
+
+<span class="h-fit w-fit text-[14px] inter-400 bg-[rgba(149,149,149,0.1)] p-[9px] text-white border border-white/10 rounded-xl ">
+    <span class="">
+        {value}
+    </span>  
+</span>

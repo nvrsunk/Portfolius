@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro'; // importar el html
+import Protagonist from '../components/Protagonist.astro';
+import Projects from '../components/Projects.astro';
+import Specialized from '../components/Specialized.astro';
+import Experiences from '../components/Experiences.astro';
+import Paragraph from '../components/Paragraph.astro';
+import Copyright from '../components/Copyright.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="">
+<main class=`dark:bg-green-300 text-white`>
+<section class="">
+<!-- Inicio -->
+
+
+    <section class="my-5">
+        <Protagonist/>
+    </section>
+
+    <div class="flex justify-center mb-16">
+        <div class="scroll-container" id="scrollContainer">
+            <div class="flex gap-3">
+                <div class="card">
+                    <Projects 
+                    title='Kovaliov Rest' 
+                    paragraph='View menus, schedules, events and make reservations.' 							
+                    ground_img='src/assets/restaurant.jpg'
+                    icon_span_one='src/assets/mongodb.png'
+                    icon_span_two='src/assets/tailwind.png'
+                    icon_span_three='src/assets/javascript.png'
+                link='https://apple.com'
+                link_img='src/assets/arrow_link.svg'
+                />
+                </div>
+                <div class="card">
+                <Projects 
+                title='Heavenly' 
+                paragraph='Social network with encrypted conversations and publication sections' 
+                ground_img='src/assets/socialmedia.jpg'
+                icon_span_one='src/assets/python.svg'
+                icon_span_two='src/assets/mongodb.png'
+                icon_span_three='src/assets/fastapi.svg'
+                ground_height='h-[190px] '
+                link='https://apple.com'
+                link_img='src/assets/arrow_link.svg'
+                />	
+                </div>
+                <div class="card">
+                <Projects 
+                title='Modern Train' 
+                paragraph='Get training guides from personal trainers and ' 								
+                ground_img='src/assets/rusa.jpg'
+                icon_span_one='src/assets/tailwind.png'
+                icon_span_two='src/assets/docker.png'
+                icon_span_three='src/assets/javascript.png'
+                link='https://apple.com'
+                link_img='src/assets/arrow_link.svg'
+                />	
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <section class="flex justify-center relative overflow-hidden mb-16">
+            <section class="card_degraded ">
+            </section>
+            <Specialized/>
+        </section>
+        
+        <section class="flex justify-center relative overflow-hidden mb-40 ">
+            <section class="card_degraded_two">
+            <Experiences/>
+            </section>
+        </section>
+        
+        
+        <section class="flex flex-col justify-center gap-4">
+            <Contact/>
+            <Copyright/>
+        </section>
+        
+
+<!-- Final -->
+</section>
+</main>
+</Layout>
+
+

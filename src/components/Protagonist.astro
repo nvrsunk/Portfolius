@@ -1,0 +1,27 @@
+---
+import Buttons from '../components/Buttons.astro';
+---
+    <section class="text-center">
+        <section class="flex flex-col items-center">
+            <section class="mb-[20px] flex justify-around gap-9 border-b border-gray-500 w-[100%] pb-3">
+                <img src="src/assets/translate.svg" alt="" class="h-7">
+                <img src="src/assets/translate.svg" alt="" class="h-7">
+                <img src="src/assets/moon.svg" alt="" class="h-7" id="darkmode">
+            </section>
+           
+            <section class="flex flex-col mt-1 mb-5 text-6xl leading-[55px] items-center tracking-[-3px] font-[Manrope] font-bold text-[#c7c7c7]">
+                The way to <br>
+                <b class="drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] text-white">create modern</b>
+                    and simple
+                <span class="timezone text_colors">websites</span>
+            </section>
+            <section class="grid grid-cols-2 gap-x-2 gap-y-4 ">
+                <Buttons value='Frontend Development'/>
+                <Buttons value='Backend Development'/>
+                <span class="col-span-2">
+                    <Buttons value='UX / UI Design'/>
+                </span>
+            </section>
+        </section>
+    </section>
+

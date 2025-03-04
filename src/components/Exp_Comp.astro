@@ -1,0 +1,47 @@
+---
+interface Props{
+    company?: string
+    dates?: string
+    workstation?: string
+    paragraph?: string
+    paragraph_two?: string
+    country?: string
+    img_link?: string
+    website_link?: string
+    }
+    const {company,dates,workstation,paragraph,paragraph_two,country,img_link,website_link } = Astro.props
+---
+       
+    <section class="mb-[10px] bg-[rgba(114,114,114,0.2)] p-3 ">
+        <section class="">
+            <section class="pb-[10px]">
+                <section class="flex items-center gap-2">
+                    <span class="flex">
+                        <img src={country} alt="" class="h-[30px] opacity-[0.8] ">
+                    </span>
+                    <section class="flex items-center gap-2">
+                        <h1 class="text-[22px]">{company}</h1> 
+                    </section>
+                </section>
+                <span class="text-[16px]">{workstation} <span class="text-[15px] text-[#C7C7C7] ">( {dates} )</span></span>
+            </section>
+
+
+            <section class="pb-[15px] text-[#cfcfcf]">
+                <p class="">
+                    {paragraph}
+                </p>
+                <br>
+                <p>
+                    {paragraph_two}
+                </p>
+            </section>
+            <section class="flex items-center justify-end">
+                <span class="">
+                    <a href={website_link}>
+                        <img src={img_link} alt="" class="h-[25px] pr-[25px] ">
+                    </a>
+                </span>
+            </section>
+        </section>
+    </section>
