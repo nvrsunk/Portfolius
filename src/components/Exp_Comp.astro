@@ -12,12 +12,12 @@ interface Props{
     const {company,dates,workstation,paragraph,paragraph_two,country,img_link,website_link } = Astro.props
 ---
        
-    <section class=" bg-[rgba(114,114,114,0.2)] p-3 ">
+    <section class="bg-[rgba(114,114,114,0.2)] p-3 ">
         <section class="">
             <section class="pb-[10px]">
-                <section class="flex items-center gap-2">
+                <section class="flex items-center gap-2 pb-1">
                     <span class="flex">
-                        <img src={country} alt="" class="h-[30px] opacity-[0.8] ">
+                        <img src={country} alt="" class="h-[26px] opacity-[0.8] ">
                     </span>
                     <section class="flex items-center gap-2">
                         <h1 class="text-[22px]">{company}</h1> 
@@ -39,7 +39,7 @@ interface Props{
             <section class="flex items-center justify-end">
                 <span class="">
                     <a href={website_link}>
-                        <img src={img_link} alt="" class="h-[25px] pr-[25px] ">
+                        <img src={img_link} alt="" class="h-[25px] ">
                     </a>
                 </span>
             </section>
