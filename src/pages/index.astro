@@ -62,16 +62,16 @@ import Contact from '../components/Contact.astro';
         </div>
     </div>
 
-        <section class="h-64 relative my-4">
+        <section class="h-64 relative my-4 md:hidden">
             <section class="card_degraded_one">
             </section>
         </section>
 
-        <section class="flex justify-center relative overflow-hidden mb-5">
+        <section class="flex justify-center mb-5">
             <Specialized/>
         </section>
 
-        <section class="h-64 relative my-4">
+        <section class="h-64 relative my-4 md:hidden">
             <section class="card_degraded_two">
             </section>
         </section>
@@ -82,12 +82,12 @@ import Contact from '../components/Contact.astro';
             </section>
         </section>
         
-        <section class="h-64 relative my-4">
+        <section class="h-64 relative my-4 md:hidden">
             <section class="card_degraded_three">
             </section>
         </section>
 
-        <section class="flex flex-col justify-center gap-8">
+        <section class="flex flex-col justify-center gap-8 mb-2">
             <Contact/>
             <Copyright/>
         </section>

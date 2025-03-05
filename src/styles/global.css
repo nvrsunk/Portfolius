@@ -1,7 +1,7 @@
 :root {
     --color-mint-500: oklch(0.72 0.11 178);
     --day-gradient: linear-gradient(90deg, #ff8859, #ff6397);
-    --night-gradient: linear-gradient(90deg, #9271ec, #436fff); 
+    --night-gradient: linear-gradient(90deg, #00810b, #337aff); 
     --day-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
     --night-border-colours: linear-gradient(90deg, rgba(114, 13, 230, 0.5), rgba(160, 40, 86,0.5) ) border-box;
 }
@@ -130,10 +130,10 @@
     overflow: auto;
 }
 .scrolls_bar::-webkit-scrollbar {
-        width: 4px; /* Ancho de la barra */    
+        width: 3px; /* Ancho de la barra */    
 }
 .scrolls_bar::-webkit-scrollbar-thumb {
-        background: #D9D9D9; /* Color del "pulgar" (la parte que se arrastra) */
+        background: #7e7e7e; /* Color del "pulgar" (la parte que se arrastra) */
         border-radius: 3px; /* Bordes redondeados */
 }
 .scrolls_bar::-webkit-scrollbar-thumb:hover {
