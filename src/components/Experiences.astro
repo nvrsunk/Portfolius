@@ -3,9 +3,12 @@ import Exp_Comp from "../components/Exp_Comp.astro"
 ---
 
 <section class="flex flex-col border border-white/20 rounded-xl w-[280px] ">
-    <span class="p-3 text-center text-[24px] tracking-[-1px]
-    font-[Manrope] border-b-[1px] border-white/30 drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
-        <section class="scrolls_bar p-1 flex flex-col ">
+    <section class="flex p-3 justify-center items-center gap-2">
+        <span class="text-[24px] tracking-[-1px]
+        font-[Manrope] drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
+        <img src="assets/work.svg" alt="" class="h-4">
+        </section>
+        <section class="scrolls_bar p-1 flex flex-col border-t-[1px] border-white/30 ">
             <Exp_Comp 
             company='Apple Inc',
             dates='2020 • 2022',
@@ -14,7 +17,7 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/uk.svg',
-            img_link='assets/arrow_link.svg'
+            img_link='assets/arrow_link_two.svg'
             website_link="https://apple.com"
             /> 
            <section class="border-b border-white/30 my-5 mx-24 "></section>
@@ -26,7 +29,7 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/usa.svg',
-            img_link='assets/arrow_link.svg'
+            img_link='assets/arrow_link_two.svg'
             website_link="https://apple.com"
 
             /> 
@@ -39,7 +42,7 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/spain.svg',
-            img_link='assets/arrow_link.svg'
+            img_link='assets/arrow_link_two.svg'
             website_link="https://apple.com"
             /> 
         </section>
