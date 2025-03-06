@@ -96,7 +96,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center left, rgba(0, 145, 31, 0.3), transparent 30%);
+    background: radial-gradient(circle at center left, rgba(0, 255, 179, 0.3), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -107,7 +107,7 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center right, rgba(89, 0, 255, 0.3), transparent 30%);
+    background: radial-gradient(circle at center right, rgba(109, 30, 255, 0.3), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
@@ -118,7 +118,18 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center left, rgba(180, 12, 0, 0.3), transparent 30%);
+    background: radial-gradient(circle at center left, rgba(255, 17, 0, 0.3), transparent 30%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+.card_degraded_white::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top center, rgba(255, 255, 255, 0.2), transparent 40%);
     mix-blend-mode: screen;
     pointer-events: none;
 }
