@@ -3,18 +3,19 @@ import Buttons from '../components/Buttons.astro';
 ---
     <section class="text-center">
         <section class="flex flex-col items-center">
-            <section class="mb-7 flex justify-around gap-9 border-b border-gray-500 w-[100%] pb-3">
-                <img src="assets/translate.svg" alt="" class="h-6">
-                <img src="assets/arrow_link.svg" alt="" class="h-6">
-                <img src="assets/moon.svg" alt="" class="h-6" id="darkmode">
-            </section>
-           
-            <section class="flex flex-col mt-1 mb-5 text-[55px] leading-[55px] items-center tracking-[-3px] font-[Manrope] font-bold text-[#c7c7c7]">
-                The way to <br>
-                create <br>
-                modern <br>
-                and simple <br>
-                <span class="timezone text_colors">websites</span>
+            <section class="flex justify-around gap-9 border-b border-gray-500 w-[100%] pb-3 resplandor ">
+                <img src="assets/translate.svg" alt="" class="h-5">
+                <img src="assets/arrow_link.svg" alt="" class="h-5">
+                <img src="assets/moon.svg" alt="" class="h-5" id="darkmode">
+            </section>      
+            <section class="mt-8 flex flex-col mb-5 text-[50px] leading-[50px] items-center font-[Manrope] font-bold text-[#8d8d8d]">
+                <section class="relative">
+                    <span>The way to</span>
+                    <span>create</span> <br>
+                    <span class="timezone text_colors rouge-script pl-2 text-[70px]">modern</span> <br>
+                    <span class="">and simple</span>
+                    <span class="timezone text_colors text-[50px] ">websites</span>
+                </section>
             </section>
             <section class="grid grid-cols-2 gap-x-2 gap-y-4 ">
                 <Buttons value='Frontend Development'/>
