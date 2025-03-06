@@ -3,6 +3,7 @@ interface Props{
     title?: string
     paragraph?: string
     width?: string
+    height?: string
     ground_img?: string
     ground_height?: string 
     icon_span_one?: string
@@ -14,18 +15,18 @@ interface Props{
 
  
 }
-const {title,paragraph,width='w-[190px]',ground_img,ground_height='h-[170px]',icon_span_one,icon_span_two,icon_span_three,link,link_img,shadow}  = Astro.props
+const {title,paragraph,width='w-[190px]',height='h-[265px]', ground_img,ground_height,icon_span_one,icon_span_two,icon_span_three,link,link_img,shadow}  = Astro.props
 ---
 
 
 
-<section class=`flex flex-col border border-white/30 rounded-xl max-w-48 ${width} shrink-0`>
+<section class=`flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0 `>
     <section class="flex flex-col text-center border-b border-white/30 p-2 h-24">
-        <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>
-        <p class="text-[12px] text-[#bebebe] mt-[-3px] whitespace-normal">{paragraph}</span>
+            <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>
+            <p class="text-[12px] text-[#bebebe] mt-[-1px] whitespace-normal">{paragraph}</span>
     </section>
     <section class="border-b border-white/30 p-[2px] ">
-        <img src={ground_img} alt="" class=``>
+        <img src={ground_img} alt="" class=`${ground_height}`>
     </section>
     <section class="flex justify-between items-center p-[10px] ">
         <span class="flex gap-2">
