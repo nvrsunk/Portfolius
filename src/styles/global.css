@@ -45,12 +45,12 @@
     100% { background-position: 200% 50%; }
 }
 .animated_white_basic {
-    background: linear-gradient(70deg, #525252,#525252, #525252, #525252, #ffffff, #ffffff, #525252, #525252, #525252,#525252);
+    background: linear-gradient(30deg, #525252,#525252, #525252, #525252, #ffffff, #ffffff, #525252, #525252, #525252,#525252);
     background-size: 200% 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: moveGradient 4s linear infinite;
+    animation: moveGradient 3s linear infinite;
     font-family: Manrope;
 }
 
@@ -62,7 +62,7 @@
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: thin; /* Para Firefox */
-    scrollbar-color: #000000 #ddd; /* Color de la barra y fondo en Firefox */
+    scrollbar-color: #000000 #000000; /* Color de la barra y fondo en Firefox */
     scroll-behavior: auto;
     padding:20px;
 }
@@ -74,12 +74,12 @@
 }
 
 .scroll-container::-webkit-scrollbar-track {
-    background: #ddd;
+    background: #000000;
     border-radius: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #000000;
     border-radius: 8px;
 }
 
