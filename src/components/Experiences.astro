@@ -2,13 +2,13 @@
 import Exp_Comp from "../components/Exp_Comp.astro"
 ---
 
-<section class="flex flex-col border border-white/20 rounded-xl w-[270px] ">
+<section class="dark:border-black dark:text-black flex flex-col border border-white/20 rounded-xl w-[270px] ">
     <section class="flex flex-col p-3 justify-center items-center">
         <span class="text-[24px] tracking-[-1px]
         font-[Manrope] drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
         <span class="text-[#4884f3] mt-[-3px] text-[13px]">for more information</span>
         </section>
-        <section class="scrolls_bar p-1 flex flex-col border-t-[1px] border-white/30 ">
+        <section class="dark:border-black scrolls_bar p-1 flex flex-col border-t-[1px] border-white/30 ">
             <Exp_Comp 
             company='Apple Inc',
             dates='2020 • 2022',
@@ -46,8 +46,8 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             website_link="https://apple.com"
             /> 
         </section>
-    <section class="p-2 flex items-center gap-2 justify-center border-t-[1px] border-white/30 ">
+    <section class="dark:border-black p-2 flex items-center gap-2 justify-center border-t-[1px] border-white/30 ">
         <span>References</span>
-        <span><img src="assets/arrow_link.svg" alt="" class="h-4"></span>
+        <span><img src="assets/arrow_link.svg" alt="" class="h-4 dark:invert"></span>
     </section>
 </section>

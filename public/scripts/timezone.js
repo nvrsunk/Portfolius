@@ -1,7 +1,12 @@
+const icon = document.getElementById("icon");
 const darkMode = document.querySelector('#darkmode');
 
 darkMode.addEventListener('click',()=>{
     document.documentElement.classList.toggle('dark');
+    icon.src = document.documentElement.classList.contains("dark")
+    ? "/moon.svg" 
+    : "/gashito.svg"; 
+
 })
 
 

@@ -20,13 +20,13 @@ const {title,paragraph,width='w-[190px]',height='h-[265px]', ground_img,ground_h
 
 
 
-<section class=`flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0 `>
-    <section class="flex flex-col text-center border-b border-white/30 p-2 h-24">
+<section class=`dark:border-black flex flex-col border border-white/30 rounded-xl max-w-48 ${width} ${height} shrink-0 `>
+    <section class="dark:border-black flex flex-col text-center border-b border-white/30 p-2 h-24">
         <section class="flex justify-center items-center gap-1">
             <span class="animated_white_basic text-[18px] tracking-[-1.5px] font-[Manrope] text-[extrabold]">{title}</span>        </section>
-            <p class="text-[12px] text-[#bebebe] mt-[-1px] whitespace-normal">{paragraph}</span>
+            <p class="dark:text-black text-[12px] text-[#bebebe] mt-[-1px] whitespace-normal">{paragraph}</span>
     </section>
-    <section class="border-b border-white/30 p-[2px] ">
+    <section class="dark:border-black border-b border-white/30 p-[2px] ">
         <img src={ground_img} alt="" class=`${ground_height}`>
     </section>
     <section class="flex justify-between items-center p-[10px] ">
