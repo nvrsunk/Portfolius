@@ -61,7 +61,7 @@
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: thin; /* Para Firefox */
-    scrollbar-color: #000000 #000000; /* Color de la barra y fondo en Firefox */
+    scrollbar-color: #ffffff #000000; /* Color de la barra y fondo en Firefox */
     scroll-behavior: auto;
     padding:20px;
 }
@@ -135,26 +135,4 @@
     background: radial-gradient(circle at center left, rgba(255, 28, 134, 0.5), transparent 30%);
     mix-blend-mode: screen;
     pointer-events: none;
-}
-
-/*****  Scrollbar Experiences.  *****/
-.scrolls_bar{
-    width: auto;
-    height: 300px;
-    overflow: auto;
-}
-.scrolls_bar::-webkit-scrollbar {
-        width: 3px; /* Ancho de la barra */    
-}
-.scrolls_bar::-webkit-scrollbar-thumb {
-        background: #7e7e7e; /* Color del "pulgar" (la parte que se arrastra) */
-        border-radius: 3px; /* Bordes redondeados */
-}
-.scrolls_bar::-webkit-scrollbar-thumb:hover {
-        background: #2980b9; /* Color cuando pasas el mouse */
-}
-
-.scrolls_bar::-webkit-scrollbar-track {
-        background: #0b0b0b; /* Color del fondo de la barra */
-        border-radius: 5px;
 }
