@@ -16,20 +16,39 @@ interface Props{
 ---
        
     <section class="bg-[rgba(114,114,114,0.2)] p-4">
-        <section class="">
             <section class="pb-[10px]">
-                <section class="flex items-center gap-2 pl-1">
-                    <h1 class="text-[16px]">{company}</h1>
-                    <span class="text-gray-300 text-[12px] ">{others}</span> 
-                    
-                </section>
-                <section class=" flex  ">
-                    <section class="flex gap-1 items-center ">
-                        <span class="text-[12px] text-[#4884f3] border border-white/30 p-[3px] rounded-[8px] "> {workstation} </span>
-                        <img src={country} alt="" class="h-5 opacity-[0.8] ">
-                        <span class="dark:text-black text-[12px] text-[#C7C7C7]">( {dates} )</span>    
+
+
+
+                <section class="flex gap-2">
+                    <section class="flex flex-col">
+                        <section class="flex gap-2">
+                            <h1 class="text-[18px]">{company}</h1>
+                            <span class="text-[12px] text-[#4884f3] border border-white/30 p-[3px] rounded-[8px] h-fit w-fit"> {workstation} </span>
+                        </section>
+                        <section class="flex items-end gap-2">
+                            <span class="text-gray-400 text-[13px] ">{others}</span> 
+                            <img src={country} alt="" class="h-4 opacity-[0.8] ">
+                            <span class="dark:text-black text-[12px] text-[#C7C7C7]">( {dates} )</span>  
+                        </section>
                     </section>
+                   
                 </section>
+
+
+                
+                <section class="flex gap-2">
+                    <section class="flex flex-col">
+                        <section class="flex gap-2">
+                          
+                        </section>
+                        <section class="flex">
+                            <section class="flex items-center gap-1">
+                            </section>
+                        </section>
+                    </section>
+                 
+                </section>             
             </section>
 
 
@@ -46,5 +65,4 @@ interface Props{
                     <img src={language_three} alt="" class="h-5">
                 </span>
             </section>
-        </section>
     </section>
