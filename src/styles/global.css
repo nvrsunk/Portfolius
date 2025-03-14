@@ -60,26 +60,24 @@
     max-width: fit-content;
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: thin; /* Para Firefox */
-    scrollbar-color: #000000 #000000; /* Color de la barra y fondo en Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.1) rgba(255,0,0,0.9) ; /* Color de la barra y fondo en Firefox */
     scroll-behavior: auto;
     padding:20px;
 }
 
-
 /* Scrollbar personalizado para Chrome y Edge */
 .scroll-container::-webkit-scrollbar {
+    width: 0px;
     height: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-track {
-    background: #000000;
+    background-color: rgba(0, 0, 0, 0.1); 
     border-radius: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.1);    
 }
 
 /* Estilos de las cards */
@@ -140,4 +138,21 @@
 .scrolls_bar{
     height: 300px;
     overflow-y: auto;
+    scrollbar-width: 2px; /* Para Firefox */
+    scrollbar-color: rgba(0, 0, 0, 0.1);
+    scroll-behavior: auto;
+}
+
+.scrolls_bar::-webkit-scrollbar {
+    width:2px;
+}
+
+.scrolls_bar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.scrolls_bar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }

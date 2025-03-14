@@ -3,24 +3,27 @@ import Exp_Comp from "../components/Exp_Comp.astro"
 ---
 
 <section class="dark:border-black dark:text-black flex flex-col border border-white/20 rounded-xl w-[270px] ">
-    <section class="flex flex-col p-3 justify-center items-center">
-        <span class="text-[24px] tracking-[-1px]
-        font-[Manrope] drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
-        <span class="text-[#4884f3] mt-[-3px] text-[13px]">for more information</span>
+        <section class="flex flex-col p-3 justify-center items-center">
+            <span class="text-[24px] tracking-[-1px]
+            font-[Manrope] drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
+            <span class="text-[#4884f3] mt-[-3px] text-[12px]">for more information</span>
         </section>
-        <section class="dark:border-black scrolls_bar p-1 flex flex-col border-t-[1px] border-white/30 ">
+        <section class="dark:border-black scrolls_bar flex flex-col border-t-[1px] border-white/30 ">
+            <section class="border-b border-white/30 my-3 mx-28"></section>
             <Exp_Comp 
             company='Apple Inc',
+            others="Technology"
             dates='2020 • 2022',
             workstation='iOS Developer',
             paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products`,
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/uk.svg',
-            img_link='assets/arrow_link_two.svg'
-            website_link="https://apple.com"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
             /> 
-           <section class="border-b border-white/30 my-5 mx-24 "></section>
+           <section class="border-b border-white/30 my-3 mx-28 "></section>
             <Exp_Comp 
             company='Microsoft Corp',
             dates='2013 • 2017',
@@ -29,11 +32,13 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/usa.svg',
-            img_link='assets/arrow_link_two.svg'
-            website_link="https://apple.com"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
+
 
             /> 
-            <section class="border-b border-white/30 my-5 mx-24"></section>
+            <section class="border-b border-white/30 my-3 mx-28"></section>
             <Exp_Comp 
             company='Microsoft Corp',
             dates='2013 • 2017',
@@ -42,12 +47,16 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/spain.svg',
-            img_link='assets/arrow_link_two.svg'
-            website_link="https://apple.com"
+            language_one="assets/python.svg",
+            language_two="assets/fastapi.svg",
+            language_three="assets/tailwind.png"
+            
             /> 
+            <section class="border-b border-white/30 my-3 mx-28 "></section>
+
         </section>
     <section class="dark:border-black p-2 flex items-center gap-2 justify-center border-t-[1px] border-white/30 ">
-        <span>References</span>
+        <span class="text-[12px]">References</span>
         <span><img src="assets/arrow_link.svg" alt="" class="h-4 dark:invert"></span>
     </section>
 </section>
