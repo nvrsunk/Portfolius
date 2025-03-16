@@ -4,11 +4,14 @@ import Icons_Comp from '../components/Icons_Comp.astro';
 
 
 <section class="flex flex-col mx-24 ">
-    <span class="flex gap-5 justify-center items-end border-b pb-3 border-white/30">
-        <Icons_Comp img='assets/email.svg' link='facebook.com'  value='Email' />
-        <Icons_Comp img='assets/linkedin.svg'  link='facebook.com' value='LinkedIn' height='h-[20px] '/>
-        <Icons_Comp img='assets/github.svg' link='apple.com'  value='Github'/>
-    </span>
+    <section class="flex gap-5 justify-center items-end border-b pb-3 border-white/30">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nvrscontact@gmail.com"
+        target="_blank" rel="noopener noreferrer">
+            <img src="assets/email.svg" alt="" class="h-[18px] ">
+        </a>
+        <Icons_Comp img='assets/linkedin.svg'  link='https://www.linkedin.com/in/alonso-nu%C3%B1ez-413b00354/' value='LinkedIn' height='h-[20px] '/>
+        <Icons_Comp img='assets/github.svg' link='https://github.com/nvrsdark'  value='Github'/>
+    </section>
     <p class="dark:text-black pt-3 text-[10px] flex items-center justify-center gap-3 text-gray-200"> 
         <span>I Live in Spain</span>
         <img src="assets/spain.svg" alt="" class="h-4">
