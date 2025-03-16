@@ -62,7 +62,7 @@
     white-space: nowrap;
     scrollbar-color: rgba(0, 0, 0, 0.1) rgba(255,0,0,0.9) ; /* Color de la barra y fondo en Firefox */
     scroll-behavior: auto;
-    padding: 5px;
+    margin: 5px;
 }
 
 /* Scrollbar personalizado para Chrome y Edge */

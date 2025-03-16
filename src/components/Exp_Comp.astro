@@ -24,12 +24,13 @@ interface Props{
                     <section class="flex flex-col gap-1">
                         <section class="flex items-center gap-2">
                             <h1 class="text-[18px] pl-1">{company}</h1>
-                            <span class="dark:text-black text-[12px] text-[#afafaf] s"> {others}</span>  
+                            <img src={country} alt="" class="h-[14px] opacity-[0.8] ">
+                            <span class="dark:text-black text-[12px] text-[#C7C7C7]">( {dates} )</span>  
                         </section>
                         <section class="flex items-center gap-2">
-                            <span class="text-[12px] text-[#eba716] border border-white/30 p-[3px] rounded-[8px] h-fit w-fit"> {workstation} </span>
-                            <img src={country} alt="" class="h-[16px] opacity-[0.8] ">
-                            <span class="dark:text-black text-[12px] text-[#C7C7C7]">( {dates} )</span>  
+                            <span class="text-[12px] text-[#4884f3] border border-white/30 p-[3px] rounded-[8px] h-fit w-fit"> {workstation} </span>
+                            <span class="dark:text-black text-[14px] text-[#C7C7C7]"> {others} </span>  
+                     
                         </section>
                     </section>
                    
