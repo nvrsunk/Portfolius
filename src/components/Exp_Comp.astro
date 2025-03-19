@@ -10,26 +10,22 @@ interface Props{
     language_one?: string
     language_two?: string
     language_three?: string
-    
+    improvements?: string
     }
-    const {company,dates,workstation,paragraph,paragraph_two,country,others, language_one,language_two,language_three } = Astro.props
+    const {company,dates,workstation,paragraph,paragraph_two,country,improvements, language_one,language_two,language_three } = Astro.props
 ---
        
-    <section class="bg-[rgba(114,114,114,0.2)] p-4">
+    <section class="p-4 border border-white/20 rounded-xl" >
             <section class="pb-[10px]">
-
-
-
                 <section class="flex gap-2">
-                    <section class="flex flex-col gap-1">
+                    <section class="flex flex-col">
                         <section class="flex items-center gap-2">
-                            <h1 class="text-[18px] pl-1">{company}</h1>
-                            <img src={country} alt="" class="h-[14px] opacity-[0.8] ">
-                            <span class="dark:text-black text-[12px] text-[#C7C7C7]">( {dates} )</span>  
+                            <h1 class="text-[16px] ">{company}</h1>
+                            <img src={country} alt="" class="h-[16px] opacity-[0.8] ">
+                            <span class="dark:text-black text-[13px] text-[#C7C7C7]">( {dates} )</span>  
                         </section>
-                        <section class="flex items-center gap-2">
-                            <span class="text-[12px] text-[#4884f3] border border-white/30 p-[3px] rounded-[8px] h-fit w-fit"> {workstation} </span>
-                            <span class="dark:text-black text-[14px] text-[#C7C7C7]"> {others} </span>  
+                        <section class="flex items-center gap-1">
+                            <span class="text-[14px] h-fit w-fit text-[#5465ff] "> {workstation} </span>
                      
                         </section>
                     </section>
@@ -54,16 +50,21 @@ interface Props{
 
 
             <section class="dark:text-black text-[#cfcfcf] text-[12px] ">
-                <p class="mb-1 pb-3">
-                    {paragraph}
+                <p class="bg-[rgba(170,170,170,0.4)]">
+                    <p class="pb-2 text-white/70">
+                        {paragraph}
+                    </p>
+                    <p class="text-white/70">
+                        {paragraph_two}
+                    </p>
                 </p>
-                <p>
-                    {paragraph_two}
-                </p>
-                <span class="flex justify-end gap-2">
-                    <img src={language_one} alt="" class="h-5">
-                    <img src={language_two} alt="" class="h-5">
-                    <img src={language_three} alt="" class="h-5">
-                </span>
+                <section class="flex items-center justify-between pt-3 gap-2">
+                    <span class="flex justify-end gap-2">
+                        <img src={language_one} alt="" class="h-5">
+                        <img src={language_two} alt="" class="h-5">
+                        <img src={language_three} alt="" class="h-5">
+                    </span>
+                    <span class="text-[#5465ff] text-[12px]">{improvements}</span>
+                </section>
             </section>
     </section>

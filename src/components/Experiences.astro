@@ -2,15 +2,15 @@
 import Exp_Comp from "../components/Exp_Comp.astro"
 ---
 
-<section class="dark:border-black dark:text-black flex flex-col border border-white/20 rounded-xl w-[260px] ">
-        <section class="flex flex-col p-3 justify-center items-center">
-            <span class="text-[24px] tracking-[-1px]
+<section class="flex flex-col w-[260px]">
+        <section class="flex flex-col p-3 justify-center items-center border border-white/20 rounded-xl
+        ">
+            <span class="text-[22px] tracking-[-1px]
             font-[Manrope] drop-shadow-[0_0_5px_rgba(244,244,244,0.4)]">Experiences</span>
-            <span class="text-[#4884f3] mt-[-3px] text-[12px]">for more information</span>
         </section>
-        <section class="dark:border-black scrolls_bar flex flex-col border-t-[1px] border-white/30 ">
-            <section class="border-b border-white/30 my-3 mx-28"></section>
-            <Exp_Comp 
+        <section class="dark:border-black">
+            <section class="scrolls_bar flex flex-col py-6 gap-16">
+                <Exp_Comp 
             company='Apple Inc',
             others="Technology"
             dates='2020 • 2022',
@@ -19,47 +19,50 @@ import Exp_Comp from "../components/Exp_Comp.astro"
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/uk.svg',
+            improvements="+20% users"
             language_one="assets/python.svg",
             language_two="assets/fastapi.svg",
             language_three="assets/tailwind.png"
             /> 
-           <section class="border-b border-white/30 my-3 mx-28 "></section>
+           
             <Exp_Comp 
             company='Microsoft',
             others="Corporation"
             dates='2013 • 2017',
             workstation='Frontend Developer',
-            paragraph=`Part of a module of renovation of the Microsoft website and modern integrations to its services.`,
+            paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products.`,
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/usa.svg',
+            improvements="+15k visits"
             language_one="assets/python.svg",
             language_two="assets/fastapi.svg",
             language_three="assets/tailwind.png"
 
 
             /> 
-            <section class="border-b border-white/30 my-3 mx-28"></section>
+          
             <Exp_Comp 
             company='Microsoft',
             others="Technology"
 
             dates='2013 • 2017',
             workstation='Frontend Manager',
-            paragraph=`Part of a module of renovation of the Microsoft website and modern integrations to its services.`,
+            paragraph=`Working and collaborating in the development of a multiplatform application for the management of the company's internal products.`,
             paragraph_two="This development also achieved considerable progress in terms of design and ease of use.",
             
             country='assets/spain.svg',
+            improvements="+20% performance"
             language_one="assets/python.svg",
             language_two="assets/fastapi.svg",
             language_three="assets/tailwind.png"
-            
+                    
             /> 
-            <section class="border-b border-white/30 my-3 mx-28 "></section>
+        </section>
 
         </section>
-    <section class="dark:border-black p-2 flex items-center gap-2 justify-center border-t-[1px] border-white/30 ">
-        <span class="text-[12px]">References</span>
+    <section class="border border-white/20 rounded-xl p-2 flex items-center gap-2 justify-center">
+        <span class="text-[14px]">References</span>
         <span><img src="assets/arrow_link.svg" alt="" class="h-4 dark:invert"></span>
     </section>
 </section>
