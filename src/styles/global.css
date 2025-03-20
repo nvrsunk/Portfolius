@@ -136,7 +136,7 @@
 }
 
 .scrolls_bar{
-    height: 285px;
+    height: 270px;
     overflow-y: auto;
     scrollbar-width: 2px; /* Para Firefox */
     scrollbar-color: rgba(0, 0, 0, 0.1);
@@ -157,7 +157,7 @@
     border-radius: 8px;
 }
 
-.card_degraded_small::before {
+.card_degraded_other::before {
     content: "";
     position: absolute;
     top: 0;
